@@ -12,6 +12,8 @@ html, body {
 body {
     font-family: "Cairo", sans-serif;
     overflow-x: hidden;
+    perspective: 1px;
+    transform-style: preserve-3d;
 
 }
 
@@ -231,13 +233,27 @@ li {
     width: 100%;
     min-height: 100vh;
     position: relative;
+    transform-style: preserve-3d;
+}
+
+.parallax-container::before {
+    content: "";
+    width: 100;
+    height: 100%;
+    position: absolute;
+    background: url('images/respectable.webp') top center;
+    background-size: cover;
+
 }
 
 .dobra5-CTA {
+    position: absolute;
     background-color: rgba(0, 0, 0, 0);
     color: red;
     padding: 20px;
     padding-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
 }
 
 
