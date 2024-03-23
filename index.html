@@ -5,69 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LP 3</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <section class="dobra1-topbar">
             <div class="logo">
-                <img src="" alt="logo da empresa">
+                <img src="images/logo2.jpg" alt="logo da empresa">
             </div>
-            <div class="hamb">
-                <ul>
-                    <li>Nosso escritório</li>
-                    <li>Quem somos</li>
-                    <li>Nossa experiência</li>
-                    <li>Contato</li>
-                    <li>Notícias</li>
-                </ul>
+            <div class="menu-hamburguer">
+                <div class="hamb-lines"></div>
+                <div class="hamb-lines"></div>
+                <div class="hamb-lines"></div>
+    
+                <div class="hamb-menu-panel">
+                    <ul>
+                        <div class='li-wrapper'>
+                            <li><a href="#A">Nosso escritório</a></li>
+                        </div>
+                        <div class='li-wrapper'>
+                            <li><a href="#B">Nossos princípios</a></li>
+                        </div>
+                        <div class='li-wrapper'>
+                            <li><a href="#C">Quem somos</a></li>
+                        </div>
+                        <div class='li-wrapper'>
+                            <li><a href="#D">Entre em contato</a></li>
+                        </div>
+    
+    
+    
+                    </ul>
+                    
+                </div>
+    
+    
+    
             </div>
-
-        </section>
-        <section class="dobra2-titulo">
-            <h6>Nome da Firma</h6>
-            <h1>Soluções jurídicas para problemas do cotidiano</h1>
-            <button>CONVERSE CONOSCO</button>
         </section>
     </header>
 
     <main>
-        <section class="dobra3-nossa-expertise">
+       
+        <section class="dobra2-titulo">
+            <h6 class="hidden-show">LEGALCRAFT SOLUÇÕES JURÍDICAS</h6>
+            <h1 class="hidden-show">APOIO JURÍDICO PARA PROBLEMAS DO COTIDIANO</h1>
+            <button>CONVERSE CONOSCO</button>
+        </section>
+        
+        <section class="dobra3-nossa-expertise" id="A">
             <div>
-                <h3>Nossa expertise</h3>
-                <p>
+                <h2 >Nossa expertise</h2>
+                <p class="hidden-scroll">
                     "Nossa firma, LegalCraft, especializa-se em oferecer soluções jurídicas personalizadas para aprimorar a eficiência e a prestação de serviços, impulsionada por uma compreensão abrangente das necessidades de nossos clientes. Com um compromisso com a excelência, buscamos fornecer serviços jurídicos superiores a todos os nossos clientes. Com uma experiência coletiva de mais de duas décadas, nossa equipe desenvolveu uma expertise substancial em diversos setores, incluindo Engenharia, Defesa, Segurança, Saúde, Tecnologia, Desenvolvimento de Software, Mídia, Logística, Varejo, Lazer, Franquias, TI e diversos outros domínios dentro das indústrias de manufatura e serviços."
                 </p>
                 <button>NOSSOS SERVIÇOS</button>
             </div>
+        </section>
+        <section class="dobra3A-nossa-equipe">
             <div>
-                <img src="" alt="foto dos advogados">
-                <p>A firma de advocacia LegalCraft está comprometida em descobrir soluções estratégicas de longo prazo para nossos clientes, ao mesmo tempo em que mantém o mais alto nível possível de profissionalismo no serviço. Nossos especialistas legais qualificados assessoram clientes em uma ampla gama de questões jurídicas complexas em diversos campos, incluindo direito civil, criminal, comercial, etc.</p>
+                <img src="images/equipe.jpg" alt="foto dos advogados">
+                <p class="hidden-scroll">A firma de advocacia LegalCraft está comprometida em descobrir soluções estratégicas de longo prazo para nossos clientes, ao mesmo tempo em que mantém o mais alto nível possível de profissionalismo no serviço. Nossos especialistas legais qualificados assessoram clientes em uma ampla gama de questões jurídicas complexas em diversos campos, incluindo direito civil, criminal, comercial, etc.</p>
             </div>
             <div>
-                <img src="" alt="foto da equipe">
-                <p>Nossa equipe de litígios possui vitórias legais notáveis, com uma taxa de sucesso de 80%, que é a marca registrada da firma, no entanto, nosso foco principal permanece com a visão da Al Nesoor de fornecer soluções elaboradas para melhorar a eficiência jurídica e a prestação de serviços com base em uma compreensão abrangente das necessidades de nossos clientes.</p>
+                <img src="images/equipe2.jpg" alt="foto da equipe">
+                <p class="hidden-scroll">Nossa equipe de litígios possui vitórias legais notáveis, com uma taxa de sucesso de 80%, que é a marca registrada da firma, no entanto, nosso foco principal permanece com a visão da Al Nesoor de fornecer soluções elaboradas para melhorar a eficiência jurídica e a prestação de serviços com base em uma compreensão abrangente das necessidades de nossos clientes.</p>
             </div>
 
 
         </section>
-        <section class="dobra4-principios">
+        <section class="dobra4-principios" id="B">
             <div>
-                <img src="" alt="imagem de um advogado segurando livro">
+                <img src="images/law-book-crop.jpg" alt="imagem de um advogado segurando livro">
             </div>
             <div>
                 <h2>Nossos princípios</h2>
-                <p>Excelência é apenas uma pequena parcela do que oferecemos.
+                <p class="hidden-scroll">Excelência é apenas uma pequena parcela do que oferecemos.
                     Nossa equipe prioriza, acima de tudo, oferecer um atendimento
                     voltado ao cliente e customizado, sob medida, para resolver
                     os problemas do mesmo.
                 </p>
             </div>
             <div class="principios-interativo">
-                <div>
-                    <button>NOSSO COMPROMISSO</button>
-                    <button>NOSSO SERVIÇO</button>
-                    <button>NOSSOS VALORES</button>
+                <div class="principios-botoes">
+                    <button class="switch-buttons">NOSSO COMPROMISSO</button>
+                    <button class="switch-buttons">NOSSO SERVIÇO</button>
+                    <button class="switch-buttons">NOSSOS VALORES</button>
                 </div>
                 <div></div>
                     <ul>
@@ -105,56 +131,58 @@
         
         <section class="dobra5-CTA">
             <h2>Procurando um advogado?</h2>
-            <p>Nossos profissionais estão sempre dispostos a lhe
+            <p class="hidden-scroll">Nossos profissionais estão sempre dispostos a lhe
                 ajudar, dentro da letra da lei.
             </p>
             <button>CONTATE-NOS</button>
         </section>
 
-        <section class="dobra6-advogados">
+        <section class="dobra6-advogados" id="C">
+            <h2>Advogados de Excelência</h2>
             <div>
-                <img src="" alt="imagem circular do advogado">
-                <h3>José Fonseca</h3>
-                <h6>FUNDADOR E SÓCIO</h6>
+                <img class="hidden-scroll" src="images/adv1.jpg" alt="imagem circular do advogado">
+                <h3 class="hidden-scroll">José Fonseca</h3>
+                <h6 class="hidden-scroll">FUNDADOR E SÓCIO</h6>
             </div>
             <div>
-                <img src="" alt="imagem circular do advogado">
-                <h3>Anita Lorenzo</h3>
-                <h6>ANALISTA CRIMINAL</h6>
+                <img class="hidden-scroll" src="images/adv3.jpg" alt="imagem circular do advogado">
+                <h3 class="hidden-scroll">Anita Lorenzo</h3>
+                <h6 class="hidden-scroll">ANALISTA CRIMINAL</h6>
             </div>
             <div>
-                <img src="" alt="imagem circular do advogado">
-                <h3>Márcio Pereira</h3>
-                <h6>DIREITO TRABALHISTA</h6>
+                <img class="hidden-scroll" src="images/adv2.jpg" alt="imagem circular do advogado">
+                <h3 class="hidden-scroll">Márcio Pereira</h3>
+                <h6 class="hidden-scroll">DIREITO TRABALHISTA</h6>
             </div>
-            <button>Nosso time</button>
+            <button class="hidden-scroll-button">Nosso time</button>
         </section>
 
         <section class="dobra7-CTA2">
             <h2>Seu negócio merece o melhor aconselhamento jurídico.</h2>
-            <p>Contrate um advogado trabalhista de excelência e garanta
+            <p class="hidden-scroll">Contrate um advogado trabalhista de excelência e garanta
                 o bem-estar do seu empreendimento. Vamos trabalhar juntos!
             </p>
-            <button>CONTATE-NOS</button>
+            <button class="CTA2-button">CONTATE-NOS</button>
         </section>
         <section class="dobra8-testemunhos">
+            <h2>Testemunhos</h2>
             <div>
-                <p>"Estou extremamente satisfeito com os serviços prestados pelo escritório Legalcraft. Desde o primeiro contato, sua equipe demonstrou profissionalismo e expertise, guiando-me com eficiência através do processo jurídico. Graças ao seu trabalho dedicado, obtive um desfecho favorável em meu caso. Recomendo sem hesitação a Legalcraft a todos que buscam assistência jurídica de qualidade."</p>
+                <p class="hidden-scroll">"Estou extremamente satisfeito com os serviços prestados pelo escritório Legalcraft. Desde o primeiro contato, sua equipe demonstrou profissionalismo e expertise, guiando-me com eficiência através do processo jurídico. Graças ao seu trabalho dedicado, obtive um desfecho favorável em meu caso. Recomendo sem hesitação a Legalcraft a todos que buscam assistência jurídica de qualidade."</p>
                 <h6>Josué da Silva</h6>
             </div>
 
         </section>
         <section class="dobra9-mensagem-do-fundador">
-            <p>Como fundador do escritório Legalcraft, é com grande orgulho que testemunho o compromisso incessante de nossa equipe em fornecer serviços jurídicos excepcionais. Na Legalcraft, buscamos constantemente superar as expectativas de nossos clientes, oferecendo expertise jurídica de alta qualidade e soluções estratégicas para seus problemas legais. Nosso objetivo é fornecer não apenas assistência jurídica, mas também tranquilidade e confiança em momentos desafiadores. Estamos aqui para ajudar você a enfrentar qualquer desafio legal com confiança e determinação.</p>
-            <p><b>José Fonseca - Fundador</b></p>
+            <p class="hidden-scroll">Como fundador do escritório Legalcraft, é com grande orgulho que testemunho o compromisso incessante de nossa equipe em fornecer serviços jurídicos excepcionais. Na Legalcraft, buscamos constantemente superar as expectativas de nossos clientes, oferecendo expertise jurídica de alta qualidade e soluções estratégicas para seus problemas legais. Nosso objetivo é fornecer não apenas assistência jurídica, mas também tranquilidade e confiança em momentos desafiadores. Estamos aqui para ajudar você a enfrentar qualquer desafio legal com confiança e determinação.</p>
+            <p class="hidden-scroll"><b>José Fonseca - Fundador</b></p>
         </section>
-        <section class="dobra10-enviar-mensagem">
-            <form action="/submit" method="post">
+        <section class="dobra10-enviar-mensagem" id="D">
+            <form class="form" action="/submit" method="post">
                 <input type="text" name="nome" placeholder="Seu nome">
                 <input type="text" name="email" placeholder="Seu e-mail">
                 <input type="text" name="celular" placeholder="Número de telefone">
                 <input type="text" name="assunto" placeholder="Assunto">
-                <input type="text" name="mensagem" placeholder="Mensagem">
+                <textarea class="message-input" name="mensagem" placeholder="Mensagem"></textarea>
                 <input type="submit" value="Enviar mensagem">
             </form>
         </section>
@@ -190,5 +218,7 @@
     </footer>
 
 </body>
-<script src="index.js"></script>
+<script src="hamburguer.js"></script>
+<script src="text-animations.js"></script>
+<script src="principios.js"></script>
 </html>

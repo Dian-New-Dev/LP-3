@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    overflow-x: hidden;
+
+    
+
+}
+
+header, main, footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+a {
+    color: inherit; /* Mantém a cor padrão do texto */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+
+h1, h6 {
+    font-family: "Thasadith", sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 50px;
+    margin-left: 0;
+}
+
+
+h6 {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.dobra1-topbar {
+    
+
+    background-color: #2a0137;
+    height: 80px;
+    display: flex;
+}
+
+.logo {
+    width: 80%;
+    display: flex;
+
+    padding-left: 20px;
+    align-items: center;
+    
+
+}
+
+.logo img {
+    width: 50%;
+    height: 50%;
+    border-radius: 50px;
+    
+
+}
+
+.menu-hamburguer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.hamb-lines {
+  width: 30px;
+  border: 1px solid white;
+  margin-bottom: 5px;
+  transform: translateY(0) rotate(0deg);
+  transition: transform 0.5s ease;
+}
+
+.hamb-menu-panel {
+	display: block;
+	position: fixed;
+	top: 80px;
+	right: -400px;
+	background-color: #71507f;
+	color: white;
+	width: 90%;
+	font-size: 32px;
+	font-family: "Balthazar", serif;
+	transition: right 0.5s ease;
+
+}
+
+.hamb-menu-panel ul {
+	padding: 0;
+	margin: 0;
+}
+
+.li-wrapper {
+	border-bottom: 1px solid white;
+	padding: 20px;
+}
+
+.li-wrapper li {
+	list-style-type: none;
+}
+
+.dobra2-titulo {
+    background-image: url('images/lady-justice.jpg');
+    background-color: hsla(280, 6%, 10%, 0.39);
+    background-blend-mode: saturation;
+    background-size: cover;
+    overflow:hidden;
+    height: 620px;
+    border: 0px solid rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+button {
+    background-color: #71507f;
+    padding: 10px;
+    color: white;
+}
+
+
+
+.dobra3-nossa-expertise {
+    display: flex;
+    flex-direction: column;
+}
+
+.dobra3-nossa-expertise div {
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+
+}
+
+.dobra3-nossa-expertise button {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.dobra3A-nossa-equipe {
+    padding: 20px;
+    width: 100%;
+    border: 20px solid #71507f;
+}
+
+.dobra3A-nossa-equipe img {
+    width: 100%;
+}
+
+h2 {
+    color: #71507f;
+    font-size: 32px;
+    padding-left: 10px;
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.dobra4-principios {
+    padding: 20px;
+
+}
+
+.dobra4-principios img {
+    width: 100%;
+}
+
+.principios-botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.principios-botoes button{
+    margin: 5px;
+    font-weight: 600;
+}
+
+.switch-buttons {
+    background-color: #8d639e;
+    width: 95%;
+    padding: 10px;
+    color: white;
+}
+
+.switch-buttons-clicked {
+    background-color: #33243a;
+    padding: 20px;
+    color: white;
+    width: 100%;
+}
+
+li {
+    font-size: 18px;
+}
+
+.dobra5-CTA {
+    background-color: #71507f;
+    color: white;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.dobra5-CTA h2 {
+    color: white;
+}
+
+.dobra6-advogados {
+    padding: 20px;
+    text-align: center;
+
+}
+
+.dobra6-advogados img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+h6 {
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+.dobra7-CTA2 {
+    background-color: #71507f;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dobra7-CTA2 h2 {
+    color: white;
+    line-height: 40px; 
+}
+
+.CTA2-button {
+    width: 90%;
+}
+
+.dobra8-testemunhos {
+    padding: 20px;
+}
+
+.dobra9-mensagem-do-fundador {
+    color: white;
+    background-color: #71507f;
+    padding: 20px;
+    line-height: 40px;
+
+}
+
+.dobra10-enviar-mensagem {
+    padding: 20px;
+    background-color: #71507f;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.message-input {
+    height: 200px;
+}
+
+footer {
+    background-color: #2a0137;
+    color: white;
+    padding: 20px;
+}
+
+/* ///////////////// */
+
+.container {
+    height: 1000px; /* Apenas para simular uma página com rolagem */
+    overflow: hidden; /* Para esconder o conteúdo fora da visualização */
+}
+
+.hidden-scroll {
+    opacity: 0; /* Torna o parágrafo invisível */
+    transform: translateY(50px); /* Move o parágrafo para baixo, para preparar a animação */
+    transition: opacity 1s, transform 1s; /* Adiciona uma transição suave de 1 segundo para a opacidade e a transformação */
+}
+
+.visible {
+    opacity: 1; /* Torna o parágrafo visível */
+    transform: translateY(0); /* Move o parágrafo de volta para a posição original */
+}
+
+.hidden-scroll-button {
+    opacity: 0; /* Torna o parágrafo invisível */
+    width: 0px; /* Move o parágrafo para baixo, para preparar a animação */
+    font-size: 0px;
+    transition: opacity 1s, width 1s, font-size 1s;
+
+
+}
+.visible-button {
+    opacity: 1; /* Torna o parágrafo visível */
+    width: 200px;
+    font-size: 16px;
+    
+}
