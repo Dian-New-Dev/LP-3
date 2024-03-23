@@ -17,4 +17,26 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 
+const list1 = document.getElementById('button1')
+const list2 = document.getElementById('button2')
+const list3 = document.getElementById('button3')
+
+function button1() {
+    list1.style.display = 'block'
+    list2.style.display ='none'
+    list3.style.display ='none'
+}
+
+function button2() {
+    list1.style.display = 'none'
+    list2.style.display ='block'
+    list3.style.display ='none'
+}
+
+function button3() {
+    list1.style.display = 'none'
+    list2.style.display ='none'
+    list3.style.display ='block'
+}
+
     

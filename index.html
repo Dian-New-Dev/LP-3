@@ -91,18 +91,20 @@
             </div>
             <div class="principios-interativo">
                 <div class="principios-botoes">
-                    <button class="switch-buttons">NOSSO COMPROMISSO</button>
-                    <button class="switch-buttons">NOSSO SERVIÇO</button>
-                    <button class="switch-buttons">NOSSOS VALORES</button>
+                    <button class="switch-buttons" onclick="button1()">NOSSO COMPROMISSO</button>
+                    <button class="switch-buttons" onclick="button2()">NOSSO SERVIÇO</button>
+                    <button class="switch-buttons" onclick="button3()">NOSSOS VALORES</button>
                 </div>
-                <div></div>
+                <div class='buttons-hiden' id="button1">
                     <ul>
                         <li>Ética Profissional: Compromisso com a ética e a integridade em todas as interações.</li>
                         <li>Excelência Jurídica: Foco na expertise legal para fornecer resultados excepcionais.</li>
                         <li>Atendimento ao Cliente: Dedicação total ao cliente, com comunicação transparente e orientação clara.</li>
                         <li>Responsabilidade Social: Contribuição para o bem-estar da comunidade e acesso à justiça.</li>
                     </ul>
-                <div>
+                </div>
+                    
+                <div class='buttons-hiden' id="button2">
                     <ul>
                         <li>Compromisso com a Integridade: Prestação de serviços legais baseados em princípios éticos e integridade.
 
@@ -118,7 +120,7 @@
                     </li>
                     </ul>
                 </div>
-                <div>
+                <div class='buttons-hiden' id="button3">
                     <ul>
                         <li>Integridade</li>
                         <li>Excelência</li>
@@ -129,13 +131,16 @@
             </div>
         </section>
         
-        <section class="dobra5-CTA">
-            <h2>Procurando um advogado?</h2>
-            <p class="hidden-scroll">Nossos profissionais estão sempre dispostos a lhe
-                ajudar, dentro da letra da lei.
-            </p>
-            <button>CONTATE-NOS</button>
-        </section>
+        <div class="parallax-container">
+            <section class="dobra5-CTA">
+                <h2>Procurando um advogado?</h2>
+                <p class="hidden-scroll">Nossos profissionais estão sempre dispostos a lhe
+                    ajudar, dentro da letra da lei.
+                </p>
+                <button>CONTATE-NOS</button>
+            </section>
+        </div>
+
 
         <section class="dobra6-advogados" id="C">
             <h2>Advogados de Excelência</h2>

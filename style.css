@@ -13,8 +13,6 @@ body {
     font-family: "Cairo", sans-serif;
     overflow-x: hidden;
 
-    
-
 }
 
 header, main, footer {
@@ -23,6 +21,8 @@ header, main, footer {
     padding: 0;
     
 }
+
+
 
 a {
     color: inherit; /* Mantém a cor padrão do texto */
@@ -211,6 +211,11 @@ p {
     color: white;
 }
 
+.buttons-hiden {
+    display: none;
+
+}
+
 .switch-buttons-clicked {
     background-color: #33243a;
     padding: 20px;
@@ -222,12 +227,20 @@ li {
     font-size: 18px;
 }
 
+.parallax-container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
 .dobra5-CTA {
-    background-color: #71507f;
-    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    color: red;
     padding: 20px;
     padding-bottom: 30px;
 }
+
+
 
 .dobra5-CTA h2 {
     color: white;
