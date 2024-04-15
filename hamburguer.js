@@ -20,7 +20,12 @@ function transformHamburguer() {
         hambLines[0].style.transform = 'translateY(0px) rotate(0deg)';
         hambLines[1].style.width = '30px';
         hambLines[2].style.transform = 'translateY(0px) rotate(0deg)';
-        hambPanel.style.right = '-400px'
+        if (window.innerWidth < 446) {
+            hambPanel.style.right = '-400px';
+        } else if (window.innerWidth > 446 & window.innerWidth < 1001) {
+            hambPanel.style.right = '-1000px';
+        }
+        
     
 
 

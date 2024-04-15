@@ -12,8 +12,7 @@ html, body {
 body {
     font-family: "Cairo", sans-serif;
     overflow-x: hidden;
-    perspective: 1px;
-    transform-style: preserve-3d;
+
 
 }
 
@@ -23,6 +22,8 @@ header, main, footer {
     padding: 0;
     
 }
+
+
 
 
 
@@ -63,6 +64,13 @@ header {
     display: flex;
 }
 
+@media (min-width: 1000px) {
+    .dobra1-topbar {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
 .logo {
     width: 80%;
     display: flex;
@@ -73,13 +81,21 @@ header {
 
 }
 
+@media (min-width: 1000px) {
+    .logo {
+
+        width: 50%;
+
+    }
+}
+
 .logo img {
-    width: 50%;
+
     height: 50%;
     border-radius: 50px;
-    
-
 }
+
+
 
 .menu-hamburguer {
     flex: 1;
@@ -88,7 +104,30 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
+}
 
+@media (min-width: 1000px) {
+    .menu-hamburguer {
+        display: none;
+
+    }
+}
+
+.menu-normal {
+    display: none;
+}
+
+@media (min-width: 1000px) {
+    .menu-normal {
+        display: flex;
+        color: white;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+        font-weight: 600;
+
+    }
 }
 
 .hamb-lines {
@@ -110,8 +149,18 @@ header {
 	font-size: 32px;
 	font-family: "Balthazar", serif;
 	transition: right 0.5s ease;
-
 }
+
+@media (min-width: 445px) {
+    .hamb-menu-panel {
+        right: -800px;
+        width: 50%;
+
+    }
+}
+
+
+
 
 .hamb-menu-panel ul {
 	padding: 0;
@@ -140,6 +189,26 @@ header {
     padding-top: 100px;
 }
 
+@media (min-width: 1000px) {
+    .dobra2-titulo {
+        height: 900px;
+        padding-top: 200px;
+        padding-left: 350px;
+        background-size: cover;
+        background-image: url('images/lady-justice-resized.jpg');
+    }
+}
+
+@media (min-width: 1000px) {
+    .dobra2-titulo h1 {
+        width: 400px;
+        font-size: 60px;
+        font-weight: 600;
+        
+    }
+}
+
+
 button {
     background-color: #71507f;
     padding: 10px;
@@ -151,6 +220,15 @@ button {
 .dobra3-nossa-expertise {
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
+}
+
+@media (min-width: 1000px) {
+    .dobra3-nossa-expertise {
+        padding-left: 350px;
+        padding-right: 350px;
+        text-align: center;
+    }
 }
 
 .dobra3-nossa-expertise div {
@@ -171,9 +249,58 @@ button {
     border: 20px solid #71507f;
 }
 
+@media (min-width: 445px) and (max-width: 1000px) {
+    .dobra3A-nossa-equipe {
+        text-align: center;
+        padding: 40px;
+    }
+
+}
+
+@media (min-width:1000px) {
+    .dobra3A-nossa-equipe {
+        text-align: center;
+        padding-left: 350px;
+        padding-right: 350px;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+
+}
+
+@media (min-width:1000px) {
+    .dobra3A-nossa-equipe p {
+        text-align: center;
+        text-align: justify;
+        width: 300px;
+
+        
+    }
+
+}
+
 .dobra3A-nossa-equipe img {
     width: 100%;
 }
+
+@media (min-width: 445px) and (max-width: 1000px) {
+    .dobra3A-nossa-equipe img {
+        width: 365px;
+    }
+
+}
+
+@media (min-width: 445px) and (min-width: 1000px) {
+    .dobra3A-nossa-equipe img {
+        width: 300px;
+    }
+
+}
+
+
+
+
 
 h2 {
     color: #71507f;
@@ -191,8 +318,83 @@ p {
 
 }
 
+@media (min-width: 445px) and (max-width: 1000px) {
+    .dobra4-principios {
+        text-align: center;
+        padding: 40px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .dobra4-principios {
+        text-align: center;
+        padding-left: 350px ;
+        padding-right: 350px ;
+        display: flex;
+    }
+
+}
+
+.dobra4-wrapper {
+    display: none;
+}
+
+@media (min-width: 1000px) {
+    .dobra4-wrapper {
+        display: block;
+        padding-top: 0px;
+        padding-left: 20px ;
+        padding-right: 20px ;
+    }
+}
+
+@media (min-width: 1000px) {
+    .dobra4-wrapper div:nth-child(1) h2 {
+
+        margin: 0;
+        
+    }
+}
+
+@media (min-width: 1000px) {
+    .dobra4-wrapper div:nth-child(1) p {
+
+        font-size: 16px;
+        line-height: 15px;
+        text-align: justify;
+        
+    }
+}
+
 .dobra4-principios img {
     width: 100%;
+}
+
+@media (min-width: 445px) and (max-width: 1000px) {
+    .dobra4-principios img {
+        width: 365px;
+    }
+
+}
+
+@media (min-width: 445px) and (min-width: 1000px) {
+    .dobra4-principios img {
+
+        width: 600px;
+
+    }
+
+}
+
+.dobra4-principios div:nth-child(2) {
+    padding-top: 40px;
+}
+
+@media (min-width: 1000px) {
+    .dobra4-principios div:nth-child(2) {
+        padding-top: 0px;
+    }
 }
 
 .principios-botoes {
@@ -229,27 +431,10 @@ li {
     font-size: 18px;
 }
 
-.parallax-container {
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    transform-style: preserve-3d;
-}
-
-.parallax-container::before {
-    content: "";
-    width: 100;
-    height: 100%;
-    position: absolute;
-    background: url('images/respectable.webp') top center;
-    background-size: cover;
-
-}
-
 .dobra5-CTA {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0);
-    color: red;
+    text-align: center;
+    background-color: #2a0137;;
+    color: white;
     padding: 20px;
     padding-bottom: 30px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -264,13 +449,45 @@ li {
 
 .dobra6-advogados {
     padding: 20px;
+    padding-top: 50px;
     text-align: center;
 
+}
+
+.dobra6-wrapper {
+    display: none;
+}
+
+@media (min-width: 1000px) {
+    .dobra6-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 350px ;
+        padding-right: 350px ;
+    }
+}
+
+@media (min-width: 1000px) {
+    .dobra6-advogados {
+
+    }
 }
 
 .dobra6-advogados img {
     width: 100%;
     border-radius: 50%;
+}
+
+@media (min-width: 445px) and (max-width: 1000px) {
+    .dobra6-advogados img {
+        width: 405px ;
+    }
+}
+
+@media (min-width: 1000px) {
+    .dobra6-advogados img {
+        width: 300px ;
+    }
 }
 
 h3 {
@@ -285,7 +502,8 @@ h6 {
 }
 
 .dobra7-CTA2 {
-    background-color: #71507f;
+    text-align: center;
+    background-color: #2a0137;
     color: white;
     padding: 20px;
     width: 100%;
@@ -303,21 +521,53 @@ h6 {
     width: 90%;
 }
 
+@media (min-width: 1000px) {
+    .CTA2-button {
+        width: 300px;
+    }
+}
+
 .dobra8-testemunhos {
     padding: 20px;
+}
+
+@media (min-width: 1000px) {
+    .dobra8-testemunhos {
+        padding-left: 350px ;
+        padding-right: 350px ;
+        text-align: center;
+    }
 }
 
 .dobra9-mensagem-do-fundador {
     color: white;
     background-color: #71507f;
     padding: 20px;
+    padding-top: 90px;
     line-height: 40px;
 
 }
 
+@media (min-width: 1000px) {
+    .dobra9-mensagem-do-fundador {
+        padding-left: 350px ;
+        padding-right: 350px ;
+        text-align: center;
+    }
+}
+
 .dobra10-enviar-mensagem {
     padding: 20px;
+    padding-top: 90px;
     background-color: #71507f;
+}
+
+@media (min-width: 1000px) {
+    .dobra10-enviar-mensagem {
+        padding-left: 350px ;
+        padding-right: 350px ;
+        text-align: center;
+    }
 }
 
 
@@ -344,6 +594,124 @@ footer {
     padding: 20px;
 }
 
+@media (min-width: 1000px) {
+    .footer-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer-normal {
+        display: none;
+    }
+}
+
+.footer-logo-div {
+    text-align: center;
+}
+
+footer img {
+    width: 25%;
+}
+
+.footer-text-div {
+    text-align: center;
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+.footer-div-social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-div-social-media img {
+    width: 25%;
+    filter: invert(100%);
+}
+
+@media (min-width: 445px) and (max-width: 1000px) {
+    .footer-div-social-media img {
+        width: 101.25px
+    }    
+}
+
+.img-to-right {
+    margin-left: 15px;
+}
+
+.footer-div-endereco {
+    text-align: center;
+
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .footer-div-endereco {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer-div-last {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer-div-last p {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.row1 {
+    text-align: center;
+}
+
+.row1 img {
+    width: 200px;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row2 img {
+    filter: invert(100%);
+    width: 60px;
+}
+
+.row3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-wrapper div {
+    width: 300px;
+    text-align: center;
+}
+
 /* ///////////////// */
 
 .container {
@@ -358,6 +726,7 @@ footer {
 }
 
 .visible {
+    text-align: center;
     opacity: 1; /* Torna o parágrafo visível */
     transform: translateY(0); /* Move o parágrafo de volta para a posição original */
 }
