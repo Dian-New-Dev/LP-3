@@ -56,6 +56,15 @@ header {
     z-index: 1000;
 }
 
+.menu-normal a {
+    transition: transform 0.3s, color 0.3s ease;
+}
+
+.menu-normal a:hover {
+    transform: scale(1.1);
+    color: rgb(214, 196, 146)
+}
+
 .dobra1-topbar {
     
 
@@ -213,6 +222,11 @@ button {
     background-color: #71507f;
     padding: 10px;
     color: white;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
 
 
@@ -338,6 +352,10 @@ p {
 
 .dobra4-wrapper {
     display: none;
+}
+
+.dobra4-wrapper-div-1 {
+    scroll-margin-top: 100px ;
 }
 
 @media (min-width: 1000px) {
@@ -637,7 +655,7 @@ h5 {
 
 @media (min-width: 445px) and (max-width: 1000px) {
     .footer-div-social-media img {
-        width: 101.25px
+        width: 50px
     }    
 }
 
