@@ -53,7 +53,7 @@ h6 {
 header {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1025;
 }
 
 .menu-normal a {
@@ -73,7 +73,7 @@ header {
     display: flex;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
     .dobra1-topbar {
         padding-left: 50px;
         padding-right: 50px;
@@ -90,7 +90,7 @@ header {
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
     .logo {
 
         width: 50%;
@@ -115,7 +115,7 @@ header {
     position: relative;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
     .menu-hamburguer {
         display: none;
 
@@ -126,7 +126,7 @@ header {
     display: none;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
     .menu-normal {
         display: flex;
         color: white;
@@ -186,7 +186,7 @@ header {
 }
 
 .dobra2-titulo {
-    background-image: url('images/lady-justice.jpg');
+    background-image: url('images/top-view-career-guidance-items-judges.jpg');
     background-color: hsla(280, 6%, 10%, 0.39);
     background-blend-mode: saturation;
     background-size: cover;
@@ -198,17 +198,28 @@ header {
     padding-top: 100px;
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 1023px) {
+    .dobra2-titulo {
+        padding-left: 50px;
+        background-size: cover;
+        background-position: 65% 15%;
+        background-image: url('images/top-view-career-guidance-items-judges.jpg');
+    }
+}
+
+
+@media (min-width: 1024px) {
     .dobra2-titulo {
         height: 900px;
         padding-top: 200px;
         padding-left: 350px;
-        background-size: cover;
-        background-image: url('images/lady-justice-resized.jpg');
+        background-size: 100%;
+        background-position: 15% 75%;
+        background-image: url('images/top-view-career-guidance-items-judges.jpg');
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
     .dobra2-titulo h1 {
         width: 400px;
         font-size: 60px;
@@ -237,7 +248,7 @@ button:hover {
     padding-top: 20px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
     .dobra3-nossa-expertise {
         padding-left: 350px;
         padding-right: 350px;
@@ -263,7 +274,7 @@ button:hover {
     border: 20px solid #71507f;
 }
 
-@media (min-width: 445px) and (max-width: 1000px) {
+@media (min-width: 445px) and (max-width: 1025px) {
     .dobra3A-nossa-equipe {
         text-align: center;
         padding: 40px;
@@ -271,7 +282,19 @@ button:hover {
 
 }
 
-@media (min-width:1000px) {
+@media (min-width:1026px) and (max-width: 1400px) {
+    .dobra3A-nossa-equipe {
+        text-align: center;
+        padding-left: 35px;
+        padding-right: 35px;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+
+}
+
+@media (min-width:1401px) {
     .dobra3A-nossa-equipe {
         text-align: center;
         padding-left: 350px;
@@ -283,7 +306,19 @@ button:hover {
 
 }
 
-@media (min-width:1000px) {
+@media (min-width:1025px) and (max-width: 1400px) {
+    .dobra3A-nossa-equipe p {
+        text-align: center;
+        text-align: justify;
+        width: 100%;
+        padding: 0px 35px;
+
+        
+    }
+
+}
+
+@media (min-width:1401px) {
     .dobra3A-nossa-equipe p {
         text-align: center;
         text-align: justify;
@@ -298,19 +333,22 @@ button:hover {
     width: 100%;
 }
 
-@media (min-width: 445px) and (max-width: 1000px) {
-    .dobra3A-nossa-equipe img {
-        width: 365px;
-    }
-
-}
-
-@media (min-width: 445px) and (min-width: 1000px) {
+@media (min-width: 445px) and (min-width: 1025px) {
     .dobra3A-nossa-equipe img {
         width: 300px;
     }
 
 }
+
+@media (min-width: 1026px) and (max-width: 1400px) {
+    .dobra3A-nossa-equipe img {
+        width: 300px;
+        padding: 0px 20px;
+    }
+
+}
+
+
 
 
 
@@ -329,10 +367,11 @@ p {
 
 .dobra4-principios {
     padding: 20px;
+    display: flex;
 
 }
 
-@media (min-width: 445px) and (max-width: 1000px) {
+@media (min-width: 445px) and (max-width: 1025px) {
     .dobra4-principios {
         text-align: center;
         padding: 40px;
@@ -340,7 +379,17 @@ p {
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) and (max-width: 1700px) {
+    .dobra4-principios {
+        text-align: center;
+        padding-left: 35px ;
+        padding-right: 35px ;
+        display: flex;
+    }
+
+}
+
+@media (min-width: 1701px) {
     .dobra4-principios {
         text-align: center;
         padding-left: 350px ;
@@ -358,7 +407,7 @@ p {
     scroll-margin-top: 100px ;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
     .dobra4-wrapper {
         display: block;
         padding-top: 0px;
@@ -367,7 +416,7 @@ p {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
     .dobra4-wrapper div:nth-child(1) h2 {
 
         margin: 0;
@@ -375,7 +424,7 @@ p {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
     .dobra4-wrapper div:nth-child(1) p {
 
         font-size: 16px;
@@ -389,14 +438,14 @@ p {
     width: 100%;
 }
 
-@media (min-width: 445px) and (max-width: 1000px) {
+@media (min-width: 445px) and (max-width: 1025px) {
     .dobra4-principios img {
         width: 365px;
     }
 
 }
 
-@media (min-width: 445px) and (min-width: 1000px) {
+@media (min-width: 445px) and (min-width: 1025px) {
     .dobra4-principios img {
 
         width: 600px;
@@ -409,7 +458,7 @@ p {
     padding-top: 40px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
     .dobra4-principios div:nth-child(2) {
         padding-top: 0px;
     }
@@ -473,19 +522,20 @@ li {
 }
 
 .dobra6-wrapper {
-    display: none;
+    display: block;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 600px) and (max-width: 1024px) {
     .dobra6-wrapper {
         display: flex;
-        justify-content: space-evenly;
-        padding-left: 350px ;
-        padding-right: 350px ;
+        justify-content: center;
+        padding-left: 0px ;
+        padding-right: 0px ;
+        align-items: center;
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
     .dobra6-advogados {
 
     }
@@ -493,20 +543,22 @@ li {
 
 .dobra6-advogados img {
     width: 100%;
+    max-width: 300px;
     border-radius: 50%;
 }
 
-@media (min-width: 445px) and (max-width: 1000px) {
+@media (min-width: 445px) and (max-width: 1024px) {
     .dobra6-advogados img {
-        width: 405px ;
+        width: 100% ;
+        padding: 0px 10px;
     }
 }
 
-@media (min-width: 1000px) {
+/* @media (min-width: 1025px) {
     .dobra6-advogados img {
         width: 300px ;
     }
-}
+} */
 
 h3 {
     margin: 0px;
@@ -539,7 +591,7 @@ h6 {
     width: 90%;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
     .CTA2-button {
         width: 300px;
     }
@@ -549,7 +601,7 @@ h6 {
     padding: 20px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
     .dobra8-testemunhos {
         padding-left: 350px ;
         padding-right: 350px ;
@@ -566,7 +618,7 @@ h6 {
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
     .dobra9-mensagem-do-fundador {
         padding-left: 350px ;
         padding-right: 350px ;
@@ -580,7 +632,7 @@ h6 {
     background-color: #71507f;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
     .dobra10-enviar-mensagem {
         padding-left: 350px ;
         padding-right: 350px ;
@@ -612,15 +664,24 @@ footer {
     padding: 20px;
 }
 
-@media (min-width: 1000px) {
+.footer-mobile {
+    display: none;
+}
+
+@media (max-width: 675px) {
     .footer-mobile {
-        display: none;
+        display: block;
     }
 }
 
-@media (max-width: 1000px) {
+
+.footer-normal {
+    display: none;
+}
+
+@media (min-width: 676px) {
     .footer-normal {
-        display: none;
+        display: block;
     }
 }
 
@@ -649,11 +710,11 @@ h5 {
 }
 
 .footer-div-social-media img {
-    width: 25%;
+    width: 75px;
     filter: invert(100%);
 }
 
-@media (min-width: 445px) and (max-width: 1000px) {
+@media (min-width: 445px) and (max-width: 1024) {
     .footer-div-social-media img {
         width: 50px
     }    
@@ -668,7 +729,7 @@ h5 {
 
 }
 
-@media (min-width: 600px) and (max-width: 1000px) {
+@media (min-width: 600px) and (max-width: 1024) {
     .footer-div-endereco {
         display: flex;
         justify-content: space-between;
@@ -733,7 +794,7 @@ h5 {
 /* ///////////////// */
 
 .container {
-    height: 1000px; /* Apenas para simular uma página com rolagem */
+    height: 1025; /* Apenas para simular uma página com rolagem */
     overflow: hidden; /* Para esconder o conteúdo fora da visualização */
 }
 
